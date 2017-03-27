@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 <html>
-<title>我的第一个页面</title>
-这是内容,camille
+<head>
+  <meta charset="utf-8">
+  <title>camille 的博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="http://typo.sofi.sh/typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    body{padding:20px;}
+    img{max-width:100%;}
+  </style>
+</head>
+<body>
+  <div id="content">
+# 我的第一篇博客
+
+**Camille**
+
+__不要相信网上的名人名言。 ——鲁迅__
+
+大家好
+
+<img src="http://i0.hdslb.com/video/0f/0f3784793eafe66c6022b25f59f37bda.jpg">
+    
+  </div>
+  <script>
+    var content = document.getElementById('content')
+    var markdown = content.innerHTML
+    var html = marked(markdown)
+    content.innerHTML = html
+  </script>
+</body>
 </html>
